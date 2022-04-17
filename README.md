@@ -1,0 +1,2 @@
+# sString
+Disambiguation between apostrophe and closing quote is impossible - `I'm just sayin''     If BitAND($dFlag, 1) = 1 Then ; Include apostrophe         $sAlphaEx &amp;= Chr(39) ; Add apostrophe to the search criteria         $sString = StringRegExpReplace($sString, "'{2,}", "' '") ; Consequtive apostrophes are illegal         ; Apostrophies must always occur adjacent to an alpha character - one side or the other.         $sString = StringRegExpReplace($sString, "([^" &amp; $sAlphaEx &amp; "][']+[^" &amp; $sAlphaEx &amp; "])" , " ")     EndIf
